@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Lana | Autenticidad y Diseño</title>
+    <meta name="description" content="Uma Lana - Ropa tejida premium para todas las edades y tallas. Calidad artesanal y diseño moderno.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-text">
+            <span>U</span><span>m</span><span>a</span> <span>L</span><span>a</span><span>n</span><span>a</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">UMA LANA</div>
+        <ul class="nav-links">
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#coleccion">Colección</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto" class="btn-nav">Contactar</a></li>
+        </ul>
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. Hero Cinemático -->
+        <section id="hero" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Tejemos calidez,<br>diseño y autenticidad.</h1>
+                <p class="hero-subtitle">La fusión perfecta entre herencia artesanal y estética contemporánea.</p>
+                <div class="hero-buttons">
+                    <a href="#coleccion" class="btn btn-primary">Descubrir Colección</a>
+                    <a href="#contacto" class="btn btn-outline">Hablar con un asesor</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <p>Scroll para explorar</p>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- 2. Historia y Marca -->
+        <section id="historia" class="historia section-padding">
+            <div class="container grid-2-col">
+                <div class="historia-img reveal-left">
+                    <img src="assets/images/process.png" alt="Artesano tejiendo">
+                </div>
+                <div class="historia-text reveal-right">
+                    <h2 class="section-title">El Arte del Hilo</h2>
+                    <p>Cada pieza de Uma Lana cuenta una historia de paciencia, dedicación y un profundo respeto por los materiales naturales. Diseñamos prendas que trascienden las tendencias, enfocándonos en lo que realmente importa: la calidad eterna.</p>
+                    <div class="stats-container">
+                        <div class="stat">
+                            <span class="stat-num" data-target="15">0</span>
+                            <span class="stat-label">Años de Tradición</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num" data-target="100">0</span><span>%</span>
+                            <span class="stat-label">Fibras Naturales</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num" data-target="5000">0</span><span>+</span>
+                            <span class="stat-label">Clientes Felices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Catálogo Premium -->
+        <section id="coleccion" class="catalogo section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title text-center reveal-up">Colección Atemporal</h2>
+                <div class="filters reveal-up">
+                    <button class="filter-btn active" data-filter="all">Ver Todo</button>
+                    <button class="filter-btn" data-filter="adultos">Adultos</button>
+                    <button class="filter-btn" data-filter="ninos">Niños</button>
+                </div>
+                
+                <div class="masonry-grid" id="catalog-grid">
+                    <!-- Cards injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Experiencia Interactiva (Texturas) -->
+        <section class="texturas">
+            <div class="texture-bg">
+                <div class="texture-content reveal-up">
+                    <h2 class="section-title text-white">Siente la Diferencia</h2>
+                    <p class="text-white">Nuestra lana es seleccionada a mano, asegurando una suavidad incomparable y una durabilidad que pasa de generación en generación.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Testimonios -->
+        <section class="testimonios section-padding">
+            <div class="container">
+                <h2 class="section-title text-center reveal-up">Voces de Uma Lana</h2>
+                <div class="swiper testimonials-slider reveal-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide review-card">
+                            <p class="review-text">"La calidad de estos suéteres es irreal. Se sienten como un abrazo y el diseño es absolutamente elegante."</p>
+                            <h4 class="review-author">- Sofía M.</h4>
+                        </div>
+                        <div class="swiper-slide review-card">
+                            <p class="review-text">"Compré ropa para mi bebé y estoy encantada. La suavidad de la lana es perfecta para su piel delicada."</p>
+                            <h4 class="review-author">- Laura V.</h4>
+                        </div>
+                        <div class="swiper-slide review-card">
+                            <p class="review-text">"Un diseño atemporal. Es mi prenda favorita del invierno, se nota el cuidado en cada detalle."</p>
+                            <h4 class="review-author">- Andrés T.</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Galería Editorial -->
+        <section class="galeria section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title reveal-up">Lookbook</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item large reveal-up">
+                        <img src="assets/images/editorial.png" alt="Editorial 1">
+                    </div>
+                    <div class="gallery-item small reveal-up">
+                        <img src="assets/images/hero.png" alt="Editorial 2">
+                    </div>
+                    <div class="gallery-item small reveal-up">
+                        <img src="assets/images/adults.png" alt="Editorial 3">
+                    </div>
+                    <div class="gallery-item wide reveal-up">
+                        <img src="assets/images/texture.png" alt="Editorial 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Proceso Artesanal -->
+        <section id="proceso" class="proceso section-padding">
+            <div class="container">
+                <h2 class="section-title text-center reveal-up">Nuestra Esencia</h2>
+                <div class="process-timeline">
+                    <!-- SVG Path for drawing animation -->
+                    <svg class="timeline-line" viewBox="0 0 100 1000" preserveAspectRatio="none">
+                        <path class="draw-path" d="M50,0 L50,1000" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
+                    </svg>
+                    
+                    <div class="process-step reveal-up">
+                        <div class="step-icon">1</div>
+                        <div class="step-content">
+                            <h3>Selección de Fibra</h3>
+                            <p>Elegimos cuidadosamente la materia prima desde su origen.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal-up">
+                        <div class="step-icon">2</div>
+                        <div class="step-content">
+                            <h3>Hilado Natural</h3>
+                            <p>Procesos que respetan el medio ambiente y la integridad de la lana.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal-up">
+                        <div class="step-icon">3</div>
+                        <div class="step-content">
+                            <h3>Diseño y Confección</h3>
+                            <p>Manos artesanas que tejen con precisión y amor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CTA Final -->
+        <section id="contacto" class="cta-section section-padding">
+            <div class="container">
+                <div class="cta-box reveal-up">
+                    <h2 class="section-title text-white">¿Listo para abrigarte con estilo?</h2>
+                    <p class="text-white">Contáctanos directamente vía WhatsApp o envíanos un mensaje. Te atenderemos personalmente.</p>
+                    <form class="premium-form" id="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Tu Nombre</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Tu Correo</label>
+                        </div>
+                        <button type="submit" class="btn btn-white w-100">Enviar Mensaje</button>
+                    </form>
+                    <div class="whatsapp-cta mt-4">
+                        <a href="https://wa.me/59176277410" target="_blank" class="btn btn-outline-white">O escríbenos al WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9. Footer Premium -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2 class="logo-text">UMA LANA</h2>
+                    <p>Alexander Maquera</p>
+                    <p>alexandermaquera14@gmail.com</p>
+                    <p>Tel: +591 76277410</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Explorar</h3>
+                    <ul>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#coleccion">Colección</a></li>
+                        <li><a href="#proceso">Proceso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="https://facebook.com/UmaLana" target="_blank">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Uma Lana. Todos los derechos reservados. Diseñado con propósito.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & Lenis Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- App Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
